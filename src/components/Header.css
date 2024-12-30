@@ -1,0 +1,113 @@
+/* src/components/Header.css */
+.header-container {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .menu-item {
+    color: white;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .menu-item:hover {
+    text-decoration: underline;
+  }
+  
+  /* Collapsible Menu Styles */
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .menu-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #444;
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      max-height: 0;
+    }
+  
+    .menu-links.active {
+      display: flex;
+      margin-top: 60px
+    }
+  
+    .menu-item {
+      padding: 15px;
+      border-bottom: 1px solid #555;
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+  
+    .menu-item:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+  
+    .menu-item:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+  
+    .menu-item:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .menu {
+      justify-content: space-between;
+    }
+  
+    .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
