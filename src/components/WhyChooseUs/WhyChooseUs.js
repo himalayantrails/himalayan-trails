@@ -17,8 +17,22 @@ const WhyChooseUs = () => {
                     <li><strong>Customer Focus:</strong> Personalized service and dedicated support every step of the way.</li>
                 </ul>
             </div>
-        </>
 
+            <div className="row">
+                <iframe
+                    width="400"
+                    height="400"
+                    className="margin-bottom-20 col-md-4 col-sm-12"
+                    src="https://www.youtube.com/embed/LA_lV-6JND8" title="Basic Sking Course 2023 | ABVIMAS MANALI, SUB Centre Jispa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                <iframe
+                    width="400"
+                    height="400"
+                    className="margin-bottom-20 col-md-4 col-sm-12"
+                    src="https://www.youtube.com/embed/Gyq1V6vXVDA" title="Alpine Style Friendship Peak Expedition | MANALI |HIMACHAL PRADESH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </>
     );
 };
 
