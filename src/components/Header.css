@@ -16,6 +16,10 @@
 .menu-icons {
   display: flex;
   gap: 10px;
+
+  @media (max-width: 320px) {
+    gap: 0px;
+  }
 }
 
 .menu-item {
@@ -54,6 +58,11 @@
     width: 80px;
     margin-right: 2px;
     margin-left: 2px;
+  }
+
+  @media (max-width: 320px) {
+    width: 55px;
+    height: 50px;
   }
 }
 
