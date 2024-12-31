@@ -89,4 +89,9 @@
     width: 300px;
     height: 200px;
   }
+
+  .cutomized-trek {
+    width: 350px;
+    margin-left: 30px;
+  }
 }

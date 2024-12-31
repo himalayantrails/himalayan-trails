@@ -291,28 +291,28 @@ li {
 
 .itinerary-container {
   margin-left: 21px;
-}
 
-.itinerary-container ul {
-  list-style-type: none; /* Removes default bullets */
-  padding: 0;
-}
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-.itinerary-container li {
-  position: relative;
-  padding-left: 13px;
-  margin-bottom: 20px;
-}
+  li {
+    position: relative;
+    padding-left: 13px;
+    margin-bottom: 20px;
 
-.itinerary-container li::before {
-  content: '';
-  position: absolute;
-  left: -25px;
-  width: 30px;
-  height: 20px;
-  background-image: url('./assets/arrow.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -25px;
+      width: 30px;
+      height: 20px;
+      background-image: url('./assets/arrow.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .price-break-up {
@@ -328,4 +328,8 @@ li {
   font-weight: 600;
   line-height: 38px;
   color: #202020;
+}
+
+.cutomized-trek {
+  width: 450px;
 }
