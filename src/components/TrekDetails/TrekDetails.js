@@ -67,10 +67,6 @@ const TrekDetails = () => {
           </Collapsible>
         }
 
-        <div className="row">
-          <Gallery images={trekData.images} />
-        </div>
-
         <div className="col-12">
           <Collapsible title="Short Itinerary">
             <Iternary shortItinerary={trekData.shortItinerary} />
@@ -99,6 +95,10 @@ const TrekDetails = () => {
           <Collapsible title="What to Pack">
             <ul>{trekData.packingList.split("|").map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
           </Collapsible>
+        </div>
+        
+        <div className="row">
+          <Gallery images={trekData.images} />
         </div>
       </div>
     </div>
