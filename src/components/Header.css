@@ -46,8 +46,17 @@
 }
 
 .logo {
-  width: 78px;
-  height: 70px;
+  width: 100px;
+  height: 80px;
+
+  @media (max-width: 576px) {
+    width: 80px;
+    margin-right: 2px;
+  }
+
+  @media (max-width: 360px) {
+    width: 80px;
+  }
 }
 
 .social-media {
