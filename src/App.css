@@ -272,27 +272,7 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 80%;
-    height: 1px;
-    background: linear-gradient(to right, transparent, #333);
-    overflow: hidden;
-  }
-
-  &::before {
-    left: -100%;
-    background: linear-gradient(to right, #333, transparent);
-  }
-
-  &::after {
-    right: -100%;
-    background: linear-gradient(to left, #333, transparent);
-  }
+  font-weight: bold;
 }
 
 @media (min-width: 1024px) {
