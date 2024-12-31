@@ -48,17 +48,8 @@
     margin-bottom: 10px;
   }
 
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .container {
     margin-top: 129px;
-  }
-
-  .logo-container {
-    margin-bottom: -36px;
   }
 
   .section-title {

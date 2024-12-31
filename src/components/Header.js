@@ -22,8 +22,8 @@ const Header = () => {
     <div className="header-container">
       <div className="logo-container">
         <img src={logo} alt="Company Logo" className="logo" onClick={() => navigate('/')} />
-        <h2>
-          Wild Frontier Explorers
+        <div>
+          <h2 className="margin-bottom-0">Wild Frontier Explorers</h2>
           <div className="menu-icons">
             <a href="https://www.instagram.com/thakurprashant00?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
               <img src={instagram} alt="Instagram" className="social-media" />
@@ -45,7 +45,7 @@ const Header = () => {
               {menuOpen ? '✖' : '☰'}
             </span>
           </div>
-        </h2>
+        </div>
       </div>
       <div className="menu">
         <nav className={`menu-links ${menuOpen ? 'active' : ''}`}>
