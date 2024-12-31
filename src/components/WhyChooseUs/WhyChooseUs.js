@@ -3,7 +3,7 @@ import React from 'react';
 const WhyChooseUs = () => {
     return (
         <>
-            <div className="section-header margin-bottom-1">
+            <div className="margin-bottom-1">
                 <div className="section-content">
                     <span className="section-title">Why Choose Us</span>
                 </div>

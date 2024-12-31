@@ -1,7 +1,7 @@
 // src/components/ImageSlider.js
 import React, { useState, useEffect } from 'react';
 import './ImageSlider.css';
-import slide1 from '../../assets/kedarkantha.jpeg';
+import slide1 from '../../assets/BeasKund.jpeg';
 import slide2 from '../../assets/FriendshipPeak.jpg';
 
 const images = [slide1, slide2];
@@ -12,7 +12,7 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change slide every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);

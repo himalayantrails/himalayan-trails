@@ -1,4 +1,3 @@
-// src/pages/Home.js
 import React from 'react';
 import ImageSlider from '../components/ImageSlider/ImageSlider';
 import TrendingTreks from '../components/TrendingTreks/TrendingTreks';

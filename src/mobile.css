@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+  }
+
+  .menu-links.active {
+    display: flex;
+    max-height: 500px;
+    margin-top: 65px;
+  }
+
+  .menu-item {
+    padding: 15px;
+    border-bottom: 1px solid #555;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+
+  .menu-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .menu-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .menu-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu {
+    justify-content: space-between;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container {
+    margin-top: 158px;
+  }
+
+  .logo-container {
+    margin-bottom: -36px;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .section-content {
+    padding: 10px;
+  }
+
+  .align-items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: revert;
+  }
+
+  .trending-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  .treding-card-overlay {
+    width: 50%;
+    top: 0;
+  }
+
+  .card-slider-container {
+    width: 80%;
+  }
+
+  .gallery-item img {
+    width: 300px;
+    height: 200px;
+  }
+}

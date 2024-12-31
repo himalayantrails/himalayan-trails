@@ -1,6 +1,7 @@
 /* src/components/ImageSlider.css */
 .slider-container {
     margin: 0 auto;
+    margin-top: -33px;
     overflow: hidden;
     position: relative;
   }

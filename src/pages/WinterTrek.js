@@ -1,26 +1,30 @@
-// src/pages/WinterTrek.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import TrekCard from '../components/TrekCard/TrekCard';
 
 const winterTreks = [
-  { id: 1, name: 'Kedarkantha Trek', image: require('../assets/winterTreks/kedarkantha.jpg'), summary: 'A beautiful winter trek in the Himalayas.' },
-  { id: 2, name: 'Har Ki Dun Trek', image: require('../assets/winterTreks/harkidun.jpg'), summary: 'A scenic trek in the Garhwal Himalayas.' },
-  { id: 3, name: 'Brahmatal Trek', image: require('../assets/winterTreks/brahmatal.jpg'), summary: 'A picturesque trek with stunning views.' },
-  { id: 4, name: 'SarPass Trek', image: require('../assets/winterTreks/sarpass.jpg'), summary: 'A picturesque trek with stunning views.' },
+  { id: 1, name: 'Beas Kund Trek', trekDetail: 'beasKund', image: require('../assets/winterTreks/beaskund.png'), summary: 'A beautiful winter trek in the Himalayas.' }
 ];
-const WinterTrek = () => (
-  <div className="container">
-    <div className="content">
-      <h1 className='text-align-center'>Winter Treks</h1>
-      <div className="row">
-        {winterTreks.map(trek => (
-          <div key={trek.id} className="col-4 col-md-6 col-sm-12 align-items-center">
-            <TrekCard trek={trek} />
-          </div>
-        ))}
+
+const WinterTrek = () => {
+  const navigate = useNavigate();
+  const handleImageClick = (trekDetail) => {
+    navigate(`/trekDetail/${trekDetail}`);
+  };
+  return (
+    <div className="container">
+      <div className="content">
+        <h1 className='text-align-center'>Winter Treks</h1>
+        <div className="row">
+          {winterTreks.map(trek => (
+            <div key={trek.id} className="col-4 col-md-6 col-sm-12 align-items-center" onClick={() => handleImageClick(trek.trekDetail)}>
+              <TrekCard trek={trek} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-);
+  )
+};
 
 export default WinterTrek;
