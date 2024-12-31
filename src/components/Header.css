@@ -48,9 +48,10 @@
 .logo {
   width: 100px;
   height: 80px;
+  margin-left: 5px;
 
   @media (max-width: 576px) {
-    width: 80px;
+    width: 100px;
     margin-right: 2px;
   }
 
