@@ -1,0 +1,11 @@
+.cutomized-trek-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 223, 105, 0.7);
+  }
+}

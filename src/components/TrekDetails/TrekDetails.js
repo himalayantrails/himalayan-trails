@@ -36,35 +36,39 @@ const TrekDetails = () => {
         <TrekDetailShortSummary image={require('../../assets/altitude.jpg')} detail={trekData.altitude} />
         <TrekDetailShortSummary image={require('../../assets/distance.jpg')} detail={trekData.distance} />
         <TrekDetailShortSummary image={require('../../assets/grade.png')} detail={trekData.grade} />
+        <TrekDetailShortSummary detail={trekData.brsLevel} title="Bikat Rating Scale" />
 
-        <div className="margin-top-20 margin-left-20 col-sm-5">
-          <span>Bikat Rating Scale</span>
-          <div className="text-align-center margin-top-10">{trekData.brsLevel}</div>
+        <div className="col-12">
+          <div className="col-3 col-sm-12 price-break-up">
+            <div className="price-detail text-align-center">Price: {trekData.cost}</div>
+            <div className="margin-top-10">Addons:</div>
+            <ul>{trekData.addOns.map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
+          </div>
         </div>
 
-        <div className="col-3 col-sm-12 price-break-up">
-          <div className="price-detail text-align-center">Price: {trekData.cost}</div>
-          <div className="margin-top-10">Addons:</div>
-          <ul>{trekData.addOns.map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
+        <div className="col-12">
+          <Collapsible title={`Why ${trekData.name} is breath taking?`}>
+            <div>{trekData.detail}</div>
+            <div className="margin-top-20 margin-bottom-10">{trekData.detail2}</div>
+          </Collapsible>
         </div>
-
-        <Collapsible title={`Why ${trekData.name} is breath taking?`}>
-          <div>{trekData.detail}</div>
-          <div className="margin-top-20 margin-bottom-10">{trekData.detail2}</div>
-        </Collapsible>
 
         {trekData.highlight &&
-          <Collapsible title={`Highlights of ${trekData.name}`}>
-            <div>{trekData.highlight}</div>
-            <div className="margin-top-20 margin-bottom-10">{trekData.highlight2}</div>
-          </Collapsible>
+          <div className="col-12">
+            <Collapsible title={`Highlights of ${trekData.name}`}>
+              <div>{trekData.highlight}</div>
+              <div className="margin-top-20 margin-bottom-10">{trekData.highlight2}</div>
+            </Collapsible>
+          </div>
         }
 
         {trekData.trekMeantFor &&
-          <Collapsible title={`Trek Mean for ?`}>
-            <div>{trekData.trekMeantFor}</div>
-            <div className="margin-top-20 margin-bottom-10">{trekData.trekMeantFor2}</div>
-          </Collapsible>
+          <div className="col-12">
+            <Collapsible title={`Trek Mean for ?`}>
+              <div>{trekData.trekMeantFor}</div>
+              <div className="margin-top-20 margin-bottom-10">{trekData.trekMeantFor2}</div>
+            </Collapsible>
+          </div>
         }
 
         <div className="col-12">
@@ -96,7 +100,7 @@ const TrekDetails = () => {
             <ul>{trekData.packingList.split("|").map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
           </Collapsible>
         </div>
-        
+
         <div className="row">
           <Gallery images={trekData.images} />
         </div>

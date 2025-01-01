@@ -11,6 +11,17 @@ body {
   flex-direction: column;
 }
 
+.content {
+  margin: 20px;
+}
+
+.align-items-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .flex {
   display: flex;
 }
@@ -190,6 +201,10 @@ li {
   justify-content: flex-start;
 }
 
+.p-relative {
+  position: relative;
+}
+
 .margin-bottom-0 {
   margin-bottom: 0px;
 }
@@ -280,10 +295,6 @@ li {
 }
 
 @media (min-width: 1024px) {
-  .container {
-    align-items: center;
-  }
-
   .trek-details {
     margin: 120px 100px 20px 80px;
   }
@@ -316,7 +327,7 @@ li {
 }
 
 .price-break-up {
-  background-color: lightyellow;
+  background-color: #f7efef;
   padding: 15px;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
@@ -330,6 +341,6 @@ li {
   color: #202020;
 }
 
-.cutomized-trek {
-  width: 450px;
+.trek-detail-short-summary {
+  font-size: 20px;
 }

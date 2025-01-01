@@ -1,4 +1,3 @@
-// src/components/ImageSlider.js
 import React, { useState, useEffect } from 'react';
 import './ImageSlider.css';
 import slide1 from '../../assets/BeasKund.jpeg';
@@ -34,8 +33,8 @@ const ImageSlider = () => {
           </div>
         ))}
       </div>
-      <button className="prev" onClick={prevSlide}>&#10094;</button>
-      <button className="next" onClick={nextSlide}>&#10095;</button>
+      <button className="slider-btn slider-btn-left" onClick={prevSlide}>&#10094;</button>
+      <button className="slider-btn slider-btn-right" onClick={nextSlide}>&#10095;</button>
       <div className="dots">
         {images.map((_, index) => (
           <span

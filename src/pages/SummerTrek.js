@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import TrekCard from '../components/TrekCard/TrekCard';
 
 const summerTreks = [
-  { id: 1, name: 'Bhrigu Lake Trek', trekDetail: 'bhriguLake', image: require('../assets/summerTreks/bhrigulake.png'), summary: 'A picturesque trek with stunning views.' },
+  { id: 1, name: 'Bhrigu Lake Trek', trekDetail: 'bhriguLake', image: require('../assets/summerTreks/bhrigulake.jpg'), summary: 'A picturesque trek with stunning views.' },
 ];
 
 const SummerTrek = () => {

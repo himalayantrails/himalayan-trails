@@ -38,7 +38,7 @@ const Header = () => {
             </a>
 
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              <img src={whatsapp} alt="whatsapp" width="30px" height="30px" style={{ marginTop: "10px",  marginRight: "15px" }} />
+              <img src={whatsapp} alt="whatsapp" width="30px" height="30px" style={{ marginTop: "10px", marginRight: "15px" }} />
             </a>
 
             <span className="menu-icon" onClick={toggleMenu}>

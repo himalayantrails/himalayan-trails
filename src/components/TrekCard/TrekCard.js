@@ -1,13 +1,14 @@
 import React from 'react';
 
-const TrekCard = ({ trek, style, overlayCss, cardCss, handleImageClick}) => {
+const TrekCard = ({ trek, handleImageClick}) => {
   return (
-    <div className={`${"card"} ${cardCss}`} key={trek.id} style={style} onClick={handleImageClick}>
-      <img src={trek.image} alt={trek.name} />
-      <div className={`${"overlay"} ${overlayCss}`}>
-        <h3>{trek.name}</h3>
-        <p>{trek.summary}</p>
+    <div>
+    <div className="card front-card" key={trek.id} onClick={handleImageClick}>
+      <img src={trek.image} alt={trek.name} width="300" height="400" className="sec2_img"/>
+      <div className="overlay">
+        <div>{trek.name}</div>
       </div>
+    </div>
     </div>
   );
 };

@@ -1,9 +1,10 @@
 import React from 'react';
 
-const TrekDetailShortSummary = ({ image,  detail}) => (
-  <div className="col-2 col-md-3 col-sm-4 align-items-center">
-    <img src={image} alt='region' width="50px" height="50px" />
-    <div>{detail}</div>
+const TrekDetailShortSummary = ({ image,  detail, title}) => (
+  <div className="col-2 col-md-3 col-sm-6 flex trek-detail-short-summary">
+    {image && <img src={image} alt='region' width="50px" height="50px" />}
+    {title && <strong className="margin-top-10">{title}:&nbsp;{detail}</strong>}
+    {!title && <strong className="margin-top-10">{detail}</strong>}
   </div>
 );
 

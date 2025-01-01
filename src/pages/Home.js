@@ -6,12 +6,12 @@ import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs';
 
 const Home = () => (
     <div className="container">
+        <ImageSlider />
         <div className="content">
-            <ImageSlider />
+            <TrendingTreks />
+            <CustomizedTrek />
+            <WhyChooseUs />
         </div>
-        <TrendingTreks />
-        <CustomizedTrek />
-        <WhyChooseUs />
     </div>
 );
 

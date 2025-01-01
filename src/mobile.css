@@ -49,31 +49,11 @@
   }
 
   .container {
-    margin-top: 129px;
+    margin-top: 115px;
   }
 
   .section-title {
     font-size: 1.5em;
-  }
-
-  .section-content {
-    padding: 10px;
-  }
-
-  .align-items-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: revert;
-  }
-
-  .trending-card img {
-    width: 100%;
-    height: auto;
-  }
-
-  .card {
-    margin: 0;
   }
 
   .treding-card-overlay {

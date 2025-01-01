@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhyChooseUs = () => {
     return (
-        <>
+        <div className='align-items-center'>
             <div className="margin-top-20">
                 <div className="section-content">
                     <span className="section-title">Why Choose Us</span>
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
                     src="https://www.youtube.com/embed/Gyq1V6vXVDA" title="Alpine Style Friendship Peak Expedition | MANALI |HIMACHAL PRADESH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
-        </>
+        </div>
     );
 };
 
