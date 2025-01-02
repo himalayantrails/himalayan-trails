@@ -25,7 +25,7 @@ const Header = () => {
         <div>
           <h2 className="margin-bottom-0">Wild Frontier Explorers</h2>
           <div className="menu-icons col-sm-12 col-xs-10">
-            <a href="https://www.instagram.com/thakurprashant00?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/wild_frontier_explorers/profilecard/?igsh=MXRkc3lmMWI5dWsxMA==" target="_blank" rel="noopener noreferrer">
               <img src={instagram} alt="Instagram" className="social-media" />
             </a>
 
