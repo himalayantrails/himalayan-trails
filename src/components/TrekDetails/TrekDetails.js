@@ -42,7 +42,7 @@ const TrekDetails = () => {
           <div className="col-3 col-sm-12 price-break-up">
             <div className="price-detail text-align-center">Price: {trekData.cost}</div>
             <div className="margin-top-10">Addons:</div>
-            <ul>{trekData.addOns.map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
+            <ul>{trekData.addOns && trekData.addOns.map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
           </div>
         </div>
 
@@ -85,19 +85,19 @@ const TrekDetails = () => {
 
         <div className="col-12">
           <Collapsible title="What is included">
-            <ul>{trekData.whatIsIncluded.split("|").map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
+            <ul>{trekData.whatIsIncluded && trekData.whatIsIncluded.split("|").map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
           </Collapsible>
         </div>
 
         <div className="col-12">
           <Collapsible title="What is not included">
-            <ul>{trekData.whatIsNotInluded.split("|").map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
+            <ul>{trekData.whatIsNotInluded && trekData.whatIsNotInluded.split("|").map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
           </Collapsible>
         </div>
 
         <div className="col-12">
           <Collapsible title="What to Pack">
-            <ul>{trekData.packingList.split("|").map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
+            <ul>{trekData.packingList && trekData.packingList.split("|").map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
           </Collapsible>
         </div>
 
