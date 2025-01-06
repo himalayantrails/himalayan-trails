@@ -2,7 +2,7 @@ import React from 'react';
 
 const Iternary = ({ shortItinerary }) => (
   <div className="itinerary-container">
-    {shortItinerary.map((itinerary, index) => (
+    {shortItinerary && shortItinerary.map((itinerary, index) => (
       <div key={index}>
         <ul>
           {Object.entries(itinerary).map(([day, description]) => (
