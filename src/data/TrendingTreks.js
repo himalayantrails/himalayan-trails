@@ -7,7 +7,7 @@ const trendingTreks = [
   { id: 1, name: 'Friendship Peak', trekDetail: 'friendshipPeak', image: require('../../assets/expedition/friendshippeak.jpeg'), summary: 'A beautiful winter expedition in the Himalayas.' },
   { id: 2, name: 'Beas Kund Trek', trekDetail: 'beasKund', image: require('../../assets/winterTreks/beaskund.png'), summary: 'A scenic trek in the stunning Himalayas.' },
   { id: 3, name: 'Bhrigu Lake Trek', trekDetail: 'bhriguLake', image: require('../../assets/summerTreks/bhrigulake.jpg'), summary: 'A picturesque trek with stunning views.' },
-  { id: 4, name: 'Kheerganga Trek', trekDetail: 'kheerganga', image: require('../../assets/trek-details/kheerganga.jpg'), summary: 'A picturesque trek with stunning views.' }
+  { id: 4, name: 'Kheerganga Trek', trekDetail: 'kheerganga', image: require('../../assets/summerTreks/kheerganga.jpg'), summary: 'A picturesque trek with stunning views.' }
 ];
 
 const TrendingTreks = () => {

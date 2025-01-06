@@ -40,7 +40,11 @@ const TrekDetails = () => {
 
         <div className="col-12">
           <div className="col-3 col-sm-12 price-break-up">
-            <div className="price-detail text-align-center">Price: {trekData.cost}</div>
+            {trekData.cost
+             ? <div className="price-detail text-align-center">Price: {trekData.cost}</div>
+             : <div className="price-detail text-align-center"
+             dangerouslySetInnerHTML={{ __html: trekData.contactUs }}></div>
+            }
             <div className="margin-top-10">Addons:</div>
             <ul>{trekData.addOns && trekData.addOns.map((item, index) => <li key={index}>{item.trim()}</li>)}</ul>
           </div>
